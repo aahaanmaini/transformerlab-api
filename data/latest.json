@@ -1,0 +1,123 @@
+{
+  "id": "2025-09-22T16:34:03.949754+00:00",
+  "repo": "aahaanmaini/transformerlab-api",
+  "range": {
+    "mode": "window",
+    "summary": "last 1w",
+    "from": null,
+    "to": "HEAD"
+  },
+  "released_at": "2025-09-22T16:34:03.949800+00:00",
+  "stats": {
+    "commits": 37,
+    "prs": 8
+  },
+  "sections": [
+    {
+      "title": "Features",
+      "items": [
+        {
+          "summary": "Added Text-to-Speech (TTS) inference and training support for AMD hardware",
+          "refs": [
+            "PR#565"
+          ],
+          "labels": [
+            "Feature"
+          ]
+        },
+        {
+          "summary": "Add to rocm",
+          "refs": [
+            "89a339a"
+          ],
+          "labels": [
+            "Feature"
+          ]
+        },
+        {
+          "summary": "Added GPU SDK for image generation with API and test updates",
+          "refs": [
+            "3670e0f"
+          ],
+          "labels": [
+            "Feature"
+          ]
+        },
+        {
+          "summary": "Added SDK support for GPU-less environments",
+          "refs": [
+            "4a48a98"
+          ],
+          "labels": [
+            "Feature"
+          ]
+        },
+        {
+          "summary": "Added support for TTS inference and training on AMD GPUs in the diffusion pipeline",
+          "refs": [
+            "9168ca3"
+          ],
+          "labels": [
+            "Feature"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fixes",
+      "items": [
+        {
+          "summary": "Fixed directory structure for diffusion generations by removing experiment-specific paths to resolve issue with file organization.",
+          "refs": [
+            "PR#564",
+            "transformerlab/transformerlab-app#787"
+          ],
+          "labels": [
+            "Fix"
+          ]
+        },
+        {
+          "summary": "Adjusted image diffusion plugin version and simplified directory path handling by removing experiment-specific logic.",
+          "refs": [
+            "PR#575"
+          ],
+          "labels": [
+            "Fix"
+          ]
+        },
+        {
+          "summary": "Removed experiment-specific diffusion directory handling to revert to global paths for compatibility",
+          "refs": [
+            "PR#569"
+          ],
+          "labels": [
+            "Fix"
+          ]
+        },
+        {
+          "summary": "Simplified diffusion directory handling by removing experiment-specific path logic",
+          "refs": [
+            "PR#570"
+          ],
+          "labels": [
+            "Fix"
+          ]
+        },
+        {
+          "summary": "Updated diffusion plugin to use .model_dump() instead of deprecated .dict()",
+          "refs": [
+            "PR#568"
+          ],
+          "labels": [
+            "Fix"
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "generated_by": "whatsnew@0.1.0",
+    "model": "qwen-3-32b"
+  },
+  "label": "September Release"
+}
