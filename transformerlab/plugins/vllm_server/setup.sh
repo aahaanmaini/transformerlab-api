@@ -1,0 +1,1 @@
+uv pip install vllm==0.10.0

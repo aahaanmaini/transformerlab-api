@@ -1,0 +1,48 @@
+{
+  "name": "vLLM Server",
+  "uniqueId": "vllm_server",
+  "description": "vLLM is a fast and easy-to-use library for LLM inference and serving.",
+  "plugin-format": "python",
+  "type": "loader",
+  "version": "1.0.15",
+  "supports": [
+    "chat",
+    "completion",
+    "rag",
+    "tools",
+    "template",
+    "embeddings",
+    "batched",
+    "multimodal"
+  ],
+  "model_architectures": [
+    "CohereForCausalLM",
+    "Exaone4ForCausalLM",
+    "FalconForCausalLM",
+    "GemmaForCausalLM",
+    "GPTBigCodeForCausalLM",
+    "LlamaForCausalLM",
+    "MistralForCausalLM",
+    "MixtralForCausalLM",
+    "PhiForCausalLM",
+    "Phi3ForCausalLM",
+    "Qwen2ForCausalLM",
+    "Qwen2_5_VLForConditionalGeneration",
+    "Qwen2VLForConditionalGeneration",
+    "Gemma3ForConditionalGeneration",
+    "PaliGemmaForConditionalGeneration",
+    "DeepseekV2ForCausalLM",
+    "LlavaLlamaForCausalLM",
+    "LlavaQwenForCausalLM"
+  ],
+  "supported_hardware_architectures": ["cuda"],
+  "files": ["main.py", "setup.sh"],
+  "setup-script": "setup.sh",
+  "parameters": {
+    "port": {
+      "title": "Server Port",
+      "type": "integer",
+      "default": 8000
+    }
+  }
+}
